@@ -1,0 +1,477 @@
+/* General css */
+html {
+    overflow-y: scroll;
+}
+
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: unset;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+  border: 3px solid transparent;
+   background-clip: content-box;
+    background-color: white;
+}
+
+body {
+    margin: 15vw 10vw;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 20vh;
+    position: relative;
+    max-width: 1500px;
+    color: white;
+    background-color: #040303;
+}
+
+header {
+    height: 300px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 30vh;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 0;
+    font-weight: 900;
+}
+
+h2 {
+    margin: 0px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+/* Homepage css */
+
+#index section {
+    display: grid;
+    gap: 10%;
+    grid-template-columns: 50% 40%;
+}
+
+#index img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#index video{
+    width: 100%;
+}
+
+
+#index section div {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#index section div p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+#index section a {
+    text-decoration: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    color: #040303;
+    background-color: white;
+    font-weight: 700;
+    border: 1px solid;
+}
+
+#index section a:hover {
+    background-color: #040303;
+    color: white;
+    border: 1px solid;
+}
+
+/* websites */
+
+#de-rode-winkel img{
+    box-shadow: 0px 0px 50px #BA481B
+}
+
+#de-rode-winkel a{
+    background-color: #BA481B;
+}
+
+#moduloo img{
+    box-shadow: 0px 0px 50px #A99A80
+}
+
+#moduloo a{
+    background-color: #A99A80;
+}
+
+#smolke img{
+    box-shadow: 0px 0px 50px #EE7100
+}
+
+#smolke a{
+    background-color: #EE7100;
+}
+
+#social-bubble img{
+    box-shadow: 0px 0px 50px #A95AA2
+}
+
+#social-bubble a{
+    background-color: #A95AA2;
+}
+
+#echt-texel-product img{
+    box-shadow: 0px 0px 50px #27A655
+}
+
+#echt-texel-product a{
+    background-color: #27A655;
+}
+
+#social-elephant img{
+    box-shadow: 0px 0px 50px #EE6559
+}
+
+#social-elephant a{
+    background-color: #EE6559;
+}
+
+#straatapp img{
+    box-shadow: 0px 0px 50px #295ED0
+}
+
+#straatapp a{
+    background-color: #295ED0;
+}
+
+#oogvereniging img{
+    box-shadow: 0px 0px 50px #00008B
+}
+
+#oogvereniging a{
+    background-color: #00008B;
+    color: white;
+    border: 1px solid #00008B;
+}
+
+#multii img{
+    box-shadow: 0px 0px 50px #F8CD09
+}
+
+#multii a{
+    background-color: #F8CD09;
+}
+
+#hace img{
+    box-shadow: 0px 0px 50px #FF8E15
+}
+
+#hace a{
+    background-color: #FF8E15;
+}
+
+#sneeuwman img{
+    box-shadow: 0px 0px 50px white
+}
+
+#exposuply img{
+    box-shadow: 0px 0px 50px #C39469
+}
+
+#exposuply a{
+    background-color: #C39469;
+}
+
+#super-minor-bros img{
+    box-shadow: 0px 0px 50px #7DE445
+}
+
+#super-minor-bros a{
+    background-color: #7DE445;
+}
+
+#flappy img{
+    box-shadow: 0px 0px 50px #FDFB09
+}
+
+#flappy a{
+    background-color: #FDFB09;
+}
+
+#snb img{
+    box-shadow: 0px 0px 50px #179BA3
+}
+
+#snb a{
+    background-color: #179BA3;
+}
+
+#hse img{
+    box-shadow: 0px 0px 50px #4CAE95
+}
+
+#hse a{
+    background-color: #4CAE95;
+}
+
+#edsn img{
+    box-shadow: 0px 0px 50px #EF7D00
+}
+
+#edsn a{
+    background-color: #EF7D00;
+}
+
+#nfn img{
+    box-shadow: 0px 0px 50px #4EAF45
+}
+
+#nfn a{
+    background-color: #4EAF45;
+}
+
+#todo-app img {
+    width: 40%;
+    -webkit-filter: drop-shadow(0px 0px 8px white);
+    filter: drop-shadow(0px 0px 8px white);
+}
+
+#todo-app .images {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+#todo-app .images img::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #3498db; /* Change the background color to your desired color */
+    z-index: -1;
+  }
+
+
+
+
+
+
+
+  .hamburger {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    transition: background-color 0s; /* Immediate transition by default */
+  }
+
+  .hamburger.active .line{
+    background-color: #040303;
+  }
+
+  .hamburger.active .line1{
+    display: none;
+  }
+
+  .hamburger.active .line2{
+    transform: rotate(45deg) translateY(10px) translateX(5px)
+  }
+
+  .hamburger.active .line3{
+    transform: rotate(-45deg) translateY(-10px) translateX(5px)
+}
+
+
+  .active nav{
+    left: 0;
+  }
+
+  nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    gap: 30px;
+    padding: 100px 50px;
+    box-sizing: border-box;
+    z-index: -1;
+    transition: left 0.8s linear;
+}
+
+nav a{
+    color: #040303;
+}
+
+
+
+
+
+  
+
+
+#mijn-opslag img {
+    width: 40%;
+    -webkit-filter: drop-shadow(0px 0px 8px white);
+    filter: drop-shadow(0px 0px 8px white);
+}
+
+#mijn-opslag .images {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+
+
+#profielFotos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#about img{
+    width: 100%;
+}
+
+#opleidingen {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+#opleidingen section{
+display: flex;
+gap: 20px;
+}
+
+#opleidingen section img{
+    width: 10%;
+    height: fit-content;
+    align-self: center;     
+}
+
+
+#werkervaring {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+#werkervaring section{
+display: flex;
+gap: 20px;
+}
+
+#werkervaring section img{
+    width: 10%;
+    height: fit-content;
+    align-self: center;     
+}
+
+
+#hobbies {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+#hobbies section{
+display: flex;
+gap: 20px;
+align-items: center;
+}
+
+#hobbies section img{
+    width: 10%;
+    height: fit-content;
+    align-self: center;     
+}
+
+
+#contact div {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#contact-info a{
+    text-decoration: none;
+    border: 1px solid;
+    padding: 6px 10px;
+    cursor: pointer;
+    color: #040303;
+    font-weight: 500;
+    display: block;
+}
+
+#contact-info a:hover{
+    background-color: #040303;
+    color: white;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    #index section {
+        grid-template-columns: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+
+    #opleidingen section img,#opdrachtgevers section img,#hobbies section img{
+        width: 20%;
+    }
+
+    #profielFotos{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1{
+        font-size: 45px;
+    }
+    h2{
+        font-size: 30px;
+    }
+}
