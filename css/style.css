@@ -1,11 +1,7 @@
 /* General css */
-html {
-    overflow-y: scroll;
-}
-
-
 ::-webkit-scrollbar {
     width: 16px;
+    z-index: -1;
 }
 
 ::-webkit-scrollbar-track {
@@ -17,6 +13,7 @@ html {
   border: 3px solid transparent;
    background-clip: content-box;
     background-color: white;
+    z-index: -1;
 }
 
 body {
@@ -27,14 +24,17 @@ body {
     margin-bottom: 20vh;
     position: relative;
     max-width: 1500px;
-    color: white;
-    background-color: #040303;
+    color: #040303;
+    background-color: white;
 }
 
 header {
     height: 300px;
 }
 
+header p{
+    max-width: 400px;
+}
 
 main {
     display: flex;
@@ -103,161 +103,161 @@ h2 {
 
 /* websites */
 
-#de-rode-winkel img{
+#index #de-rode-winkel img{
     box-shadow: 0px 0px 50px #BA481B
 }
 
-#de-rode-winkel a{
+#index #de-rode-winkel a{
     background-color: #BA481B;
 }
 
-#moduloo img{
+#index #moduloo img{
     box-shadow: 0px 0px 50px #A99A80
 }
 
-#moduloo a{
+#index #moduloo a{
     background-color: #A99A80;
 }
 
-#smolke img{
+#index #smolke img{
     box-shadow: 0px 0px 50px #EE7100
 }
 
-#smolke a{
+#index #smolke a{
     background-color: #EE7100;
 }
 
-#social-bubble img{
+#index #social-bubble img{
     box-shadow: 0px 0px 50px #A95AA2
 }
 
-#social-bubble a{
+#index #social-bubble a{
     background-color: #A95AA2;
 }
 
-#echt-texel-product img{
+#index #echt-texel-product img{
     box-shadow: 0px 0px 50px #27A655
 }
 
-#echt-texel-product a{
+#index #echt-texel-product a{
     background-color: #27A655;
 }
 
-#social-elephant img{
+#index #social-elephant img{
     box-shadow: 0px 0px 50px #EE6559
 }
 
-#social-elephant a{
+#index #social-elephant a{
     background-color: #EE6559;
 }
 
-#straatapp img{
+#index #straatapp img{
     box-shadow: 0px 0px 50px #295ED0
 }
 
-#straatapp a{
+#index #straatapp a{
     background-color: #295ED0;
 }
 
-#oogvereniging img{
+#index #oogvereniging img{
     box-shadow: 0px 0px 50px #00008B
 }
 
-#oogvereniging a{
+#index #oogvereniging a{
     background-color: #00008B;
     color: white;
     border: 1px solid #00008B;
 }
 
-#multii img{
+#index #multii img{
     box-shadow: 0px 0px 50px #F8CD09
 }
 
-#multii a{
+#index #multii a{
     background-color: #F8CD09;
 }
 
-#hace img{
+#index #hace img{
     box-shadow: 0px 0px 50px #FF8E15
 }
 
-#hace a{
+#index #hace a{
     background-color: #FF8E15;
 }
 
-#sneeuwman img{
+#index #sneeuwman img{
     box-shadow: 0px 0px 50px white
 }
 
-#exposuply img{
+#index #exposuply img{
     box-shadow: 0px 0px 50px #C39469
 }
 
-#exposuply a{
+#index #exposuply a{
     background-color: #C39469;
 }
 
-#super-minor-bros img{
+#index #super-minor-bros img{
     box-shadow: 0px 0px 50px #7DE445
 }
 
-#super-minor-bros a{
+#index #super-minor-bros a{
     background-color: #7DE445;
 }
 
-#flappy img{
+#index #flappy img{
     box-shadow: 0px 0px 50px #FDFB09
 }
 
-#flappy a{
+#index #flappy a{
     background-color: #FDFB09;
 }
 
-#snb img{
+#index #snb img{
     box-shadow: 0px 0px 50px #179BA3
 }
 
-#snb a{
+#index #snb a{
     background-color: #179BA3;
 }
 
-#hse img{
+#index #hse img{
     box-shadow: 0px 0px 50px #4CAE95
 }
 
-#hse a{
+#index #hse a{
     background-color: #4CAE95;
 }
 
-#edsn img{
+#index #edsn img{
     box-shadow: 0px 0px 50px #EF7D00
 }
 
-#edsn a{
+#index #edsn a{
     background-color: #EF7D00;
 }
 
-#nfn img{
+#index #nfn img{
     box-shadow: 0px 0px 50px #4EAF45
 }
 
-#nfn a{
+#index #nfn a{
     background-color: #4EAF45;
 }
 
-#todo-app img {
+#index #todo-app img {
     width: 40%;
     -webkit-filter: drop-shadow(0px 0px 8px white);
     filter: drop-shadow(0px 0px 8px white);
 }
 
-#todo-app .images {
+#index #todo-app .images {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
 }
 
-#todo-app .images img::before {
+#index #todo-app .images img::before {
     content: "";
     display: block;
     position: absolute;
@@ -276,176 +276,172 @@ h2 {
 
 
   .hamburger {
-    display: block;
-    height: 26px;
-    width: 32px;
-    position: fixed;
-    top: 20px;
-    left: 20px;
+    height: 25px;
+    width: 30px;
     z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
+    position: relative;
+  }
+
+  .hamburger .line,.hamburger .line:before,.hamburger .line:after{
+    background-color: white;
+    width: 100%;
+    height: 4px;
+    top: 10px;
+    position: absolute;
+    border-radius: 50px;
+    transition: all 0.2s;
   }
   
-  .hamburger .line {
-    display: block;
-    height: 4px;
-    width: 100%;
-    border-radius: 10px;
-    background-color: white;
-    transition: background-color 0s; 
-  }
 
-  .hamburger.active .line{
-    background-color: #040303;
-    transition: background-color 0s; 
-  }
-
-  .hamburger.active .line1{
-    display: none;
-  }
-
-  .hamburger.active .line2{
-    transform: rotate(45deg) translateY(10px) translateX(5px);
-  }
-
-  .hamburger.active .line3{
-    transform: rotate(-45deg) translateY(-10px) translateX(5px);
+.hamburger .line:before{
+    content: '';
+    top: -10px;
 }
 
+.hamburger .line:after{
+    content: '';
+    top: 10px;
+}
+
+menu.active .hamburger .line:before{
+    transform: rotate(-40deg) translateY(0px) translateX(-5px);
+    width: 80%;
+}
+
+menu.active .hamburger .line:after{
+    transform: rotate(40deg) translateY(0px) translateX(-5px);
+    width: 80%;
+}
 
   .active nav{
     left: 0;
   }
-
-  nav {
-    display: flex;
+  
+menu {
     position: fixed;
+    left: 0;
     top: 0;
-    left: -100vw;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    height: 65px;
+    width: 100%;
+    z-index: 999;
+}
+
+menu.active{
     background-color: white;
-    height: 100vh;
-    width: 100vw;
-    flex-direction: column;
-    gap: 30px;
-    padding: 100px 50px;
+}
+
+
+nav {
+    display: none;
     box-sizing: border-box;
     z-index: -1;
-    transition: left 0.8s linear;
+    flex-direction: row;
+    gap: 40px;
+}
+
+menu.active nav{
+    display: flex;
+    width: inherit;
 }
 
 nav a{
     color: #040303;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    position: relative;
+    text-decoration: none;
+    font-weight: 700;
+
 }
 
 
-
-
-
-  
-
-
-#mijn-opslag img {
-    width: 40%;
-    -webkit-filter: drop-shadow(0px 0px 8px white);
-    filter: drop-shadow(0px 0px 8px white);
-}
-
-#mijn-opslag .images {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-}
-
-
-
-#profielFotos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-}
-
-#about img{
+nav a:hover:after,nav a.active:after {
+    content: "";
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: -5px;
     width: 100%;
 }
 
-#opleidingen {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-}
 
-#opleidingen section{
-display: flex;
-gap: 20px;
-}
-
-#opleidingen section img{
-    width: 10%;
-    height: fit-content;
-    align-self: center;     
-}
-
-
-#werkervaring {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-}
-
-#werkervaring section{
-display: flex;
-gap: 20px;
-}
-
-#werkervaring section img{
-    width: 10%;
-    height: fit-content;
-    align-self: center;     
-}
-
-
-#hobbies {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-}
-
-#hobbies section{
-display: flex;
-gap: 20px;
-align-items: center;
-}
-
-#hobbies section img{
-    width: 10%;
-    height: fit-content;
-    align-self: center;     
-}
-
-
-#contact div {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-#contact-info a{
-    text-decoration: none;
-    border: 1px solid;
-    padding: 6px 10px;
-    cursor: pointer;
-    color: #040303;
-    font-weight: 500;
-    display: block;
-}
-
-#contact-info a:hover{
+#index{
+    color: white;
     background-color: #040303;
+}
+
+#index menu.active{
+    background-color: #040303;
+}
+
+#index nav a{
     color: white;
 }
+
+#index .hamburger .line,#index .hamburger .line:before,#index .hamburger .line:after{
+    background-color: white;
+}
+
+#index nav a:hover:after,#index nav a.active:after{
+    background-color: white;
+}
+
+#werkervaring header h1{
+    color: #0F2C6A;
+}
+
+#werkervaring .hamburger .line,#werkervaring .hamburger .line:before,#werkervaring .hamburger .line:after{
+    background-color: #0F2C6A;
+}
+
+#werkervaring nav a:hover:after,#werkervaring nav a.active:after{
+    background-color: #0F2C6A;
+}
+
+#werkervaring nav a.active,#werkervaring nav a:hover{
+    color: #0F2C6A;
+}
+
+
+#tim header h1{
+    color: #408A2E;
+}
+
+#tim .hamburger .line,#tim .hamburger .line:before,#tim .hamburger .line:after{
+    background-color: #408A2E;
+}
+
+
+#tim nav a:hover:after,#tim nav a.active:after{
+    background-color: #408A2E;
+}
+
+#tim nav a.active,#tim nav a:hover{
+    color: #408A2E;
+}
+
+#contact header h1{
+    color: #E33E2B;
+}
+
+#contact .hamburger .line,#contact .hamburger .line:before,#contact .hamburger .line:after{
+    background-color: #E33E2B;
+}
+
+#contact nav a:hover:after,#contact nav a.active:after{
+    background-color: #E33E2B;
+}
+
+#contact nav a.active,#contact nav a:hover{
+    color: #E33E2B;
+}
+
+
 
 
 
@@ -456,23 +452,20 @@ align-items: center;
         grid-template-columns: 100%;
     }
 
+    nav{
+        flex-direction: column;
+    }
+
+    menu{
+        padding: 20px;
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .hamburger{
+        align-self: baseline;
+    }
+
 
 }
 
-@media screen and (max-width: 900px) {
-
-    #opleidingen section img,#opdrachtgevers section img,#hobbies section img{
-        width: 20%;
-    }
-
-    #profielFotos{
-        grid-template-columns: 1fr 1fr;
-    }
-
-    h1{
-        font-size: 45px;
-    }
-    h2{
-        font-size: 30px;
-    }
-}
