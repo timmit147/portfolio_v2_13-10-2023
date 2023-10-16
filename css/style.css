@@ -28,6 +28,17 @@ body {
     background-color: white;
 }
 
+#loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+    z-index: 9999;
+    transition: width 0.5s;
+}
+
 header {
     height: 300px;
 }

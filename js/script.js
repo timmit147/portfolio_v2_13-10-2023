@@ -17,3 +17,29 @@ hamburger.addEventListener('click', function () {
     // Store the current state in localStorage
     localStorage.setItem('menuActive', menu.classList.contains('active'));
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector("#loading").style.width = "0px";
+});
+
+
+function handleClick(event) {
+    // Check if the clicked element is an anchor with an href attribute
+    if (event.target.tagName === 'A' && event.target.hasAttribute('href')) {
+        // Prevent the default link behavior (navigation)
+        event.preventDefault();
+
+        // Set the opacity to 0
+        document.querySelector("#loading").style.width = "100vw";
+
+        // Wait for 2 seconds before navigating to the new page
+        setTimeout(function () {
+            // Navigate to the link's href
+            window.location.href = event.target.href;
+        }, 500);
+    }
+}
+
+// Attach the handleClick function to the click event of the body
+document.body.addEventListener("click", handleClick);
