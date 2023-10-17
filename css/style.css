@@ -1,14 +1,14 @@
-/* General css */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 16px;
     height: 90vh;
     position: fixed;
     bottom: 0;
     margin-top: 80px;
+    background-color: transparent; /* or unset */
 }
 
 ::-webkit-scrollbar-track {
-    background-color: unset;
+    background-color: transparent; /* or unset */
     margin-top: 80px;
 }
 
@@ -17,28 +17,27 @@
     border: 3px solid transparent;
     background-clip: content-box;
     background-color: white;
-}
+} */
 
 html{
     overflow: hidden;
 }
 
 body {
-    overflow-y: scroll; 
-    padding: 15vw 10vw;
+    overflow-y: scroll;
+    padding: 0px 60px;
+    margin: 0px;
     height: 100vh;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    margin-bottom: 20vh;
-    position: relative;
+    /* position: relative; */
     max-width: 1500px;
-    color: #040303;
-    background-color: white; 
+    /* color: #040303; */
+    /* background-color: white; */
+    /* display: inline-block;*/
 }
 
-#loading{
+#loading {
     position: fixed;
     top: 0;
     left: 0;
@@ -50,7 +49,10 @@ body {
 }
 
 header {
-    height: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 header p{
@@ -60,7 +62,6 @@ header p{
 main {
     display: flex;
     flex-direction: column;
-    gap: 30vh;
 }
 
 h1 {
@@ -73,6 +74,7 @@ h2 {
     margin: 0px;
     font-size: 35px;
     font-weight: 700;
+    margin-bottom: 20px;
 }
 
 /* Homepage css */
@@ -81,6 +83,7 @@ h2 {
     display: grid;
     gap: 10%;
     grid-template-columns: 50% 40%;
+    margin-bottom: 160px;
 }
 
 #index img {
@@ -350,6 +353,7 @@ menu {
     height: 65px;
     width: 100%;
     z-index: 999;
+    padding-inline-start: 20px;
 }
 
 menu.active{
@@ -358,17 +362,16 @@ menu.active{
 
 
 nav {
-    opacity: 0;
+    display: none;
     box-sizing: border-box;
     z-index: -1;
     flex-direction: row;
     gap: 40px;
-    display: flex;
     width: inherit;
 }
 
 menu.active nav{
-    opacity: 1;
+    display: flex;
 }
 
 nav a{
@@ -469,6 +472,35 @@ nav a:hover:after,nav a.active:after {
 
 
 
+.work_block {
+    display: flex;
+    gap: 20px;
+    border: 1px solid;
+    width: fit-content;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.work_block *{
+    margin: 0px;
+}
+
+.work_block img{
+    height: 80px;
+    place-self: center;
+}
+
+.work_block .content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-self: center;
+}
+
+
+
+
 @media screen and (max-width: 800px) {
 
     #index section {
@@ -489,6 +521,14 @@ nav a:hover:after,nav a.active:after {
         align-self: baseline;
     }
 
+    h1{
+        font-size: 50px;
+    }
+
+
+    body{
+        padding: 0px 10px;
+    }
 
 }
 
