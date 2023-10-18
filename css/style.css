@@ -37,10 +37,6 @@ header {
     margin-top: 60px;
 }
 
-#tim header{
-    padding-bottom: 0px;
-}
-
 header p{
     max-width: 500px;
 }
@@ -507,7 +503,9 @@ nav a:hover:after,nav a.active:after {
 
 
 
-
+.foto-block{
+    padding: 10px 0px;
+}
 
 .foto-block p{
     max-width: 400px;
@@ -548,7 +546,7 @@ nav a:hover:after,nav a.active:after {
     }
 
     menu{
-        padding: 20px;
+        padding: 15px 20px;
         height: auto;
         flex-direction: column;
     }
