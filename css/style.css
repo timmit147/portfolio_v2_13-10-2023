@@ -1,13 +1,10 @@
-html{
-    overflow: hidden;
-}
+
 
 *{
     box-sizing: border-box;
 }
 
 body {
-    overflow-y: scroll;
     padding: 0px 60px;
     margin: 0px auto;
     height: 100vh;
@@ -37,6 +34,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 60px;
 }
 
 #tim header{
@@ -109,6 +107,7 @@ h2 {
     background-color: white;
     font-weight: 700;
     border: 1px solid;
+    width: auto;
 }
 
 #index section a:hover {
@@ -336,18 +335,14 @@ menu.active .hamburger .line:after{
   
   menu {
     position: fixed;
-    left: 50%;
     top: 0;
-    transform: translateX(-50%);
     display: flex;
-    align-items: center;
     gap: 40px;
-    height: 65px;
-    width: 100%;
-    z-index: 999;
-    padding-inline-start: 15px;
-    max-width: 1500px;
-    margin: 0 auto;
+    height: 60px;
+    align-items: center;
+    left: 0;
+    margin: 0px;
+    padding: 20px;
 }
 
 menu.active{
