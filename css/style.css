@@ -16,6 +16,11 @@ body {
     position: relative;
 }
 
+body * {
+    word-wrap: break-word;
+    width: 100%;
+}
+
 #loading {
     position: fixed;
     top: 0;
@@ -529,8 +534,9 @@ nav a:hover:after,nav a.active:after {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 20px;
-    border-bottom: 3px solid;
-    width: fit-content;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
 }
 
 
