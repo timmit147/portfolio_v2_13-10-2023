@@ -7,7 +7,6 @@
 body {
     padding: 0px 60px;
     margin: 0px auto;
-    height: 100vh;
     font-family: sans-serif;
     max-width: 1500px;
     position: relative;
@@ -512,12 +511,13 @@ nav a:hover:after,nav a.active:after {
 }
 
 .foto-block .images{
-    display: flex;
+    display: grid;
     gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
+
 .foto-block .images img{
-    width: 30%;
     height: fit-content;
 }
 
@@ -556,7 +556,7 @@ nav a:hover:after,nav a.active:after {
     }
 
     h1{
-        font-size: 50px;
+        font-size: 30px;
     }
 
     #contact header{
@@ -576,6 +576,10 @@ nav a:hover:after,nav a.active:after {
         height: auto;
     }
 
+    .foto-block .images {
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -592,10 +596,14 @@ nav a:hover:after,nav a.active:after {
     }
 
     h1{
-        font-size: 30px;
+        font-size: 25px;
     }
     h2{
         font-size: 20px;
+    }
+    
+    .foto-block .images {
+        grid-template-columns: 1fr;
     }
 }
 
