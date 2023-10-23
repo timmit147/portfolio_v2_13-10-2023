@@ -14,8 +14,13 @@
     background-color: black;
 }
 
-#werkervaring::-webkit-scrollbar-thumb{
+
+#index::-webkit-scrollbar-thumb{
     background-color: #0F2C6A;
+}
+
+#werkervaring::-webkit-scrollbar-thumb{
+    background-color: #877226;
 }
 
 #tim::-webkit-scrollbar-thumb{
@@ -43,6 +48,7 @@ body {
     overflow-y: scroll;
     margin-top: 60px;
     height: calc(100vh - 60px);
+    overflow-X: hidden;
 }
 
 body * {
@@ -81,17 +87,34 @@ h2 {
 
 /* Homepage css */
 
+#index h1{
+    color: #0F2C6A;
+}
+
+#index .hamburger .line,#index .hamburger .line:before,#index .hamburger .line:after{
+    background-color: #0F2C6A;
+}
+
+#index nav a:hover:after,#index nav a.active:after{
+    background-color: #0F2C6A;
+}
+
+#index nav a.active,#index nav a:hover{
+    color: #0F2C6A;
+}
+
 #index section {
     display: grid;
     gap: 10%;
     grid-template-columns: 50% 40%;
     margin-bottom: 160px;
+    align-items: center;
 }
 
 #index section > img {
     width: 100%;
     border-radius: 5px;
-    box-shadow: 0px 3px 7px black;
+    box-shadow: 0px 2px 3px black;
 }
 
 #index video{
@@ -104,7 +127,21 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 8px;
+}
+
+
+#index section .content span{
+width: auto;
+border: 1px solid;
+padding: 5px 8px;
+}
+
+
+#index section .content .labels {
+    display: flex;
+    gap: 8px;
+    flex-flow: wrap;
 }
 
 #index section .content p{
@@ -116,22 +153,23 @@ h2 {
 #index section .content h2{
     margin-bottom: 0px;
     margin-top: 0px;
+    color: #0f2c6a;
 }
 
 #index section a {
     text-decoration: none;
     padding: 6px 10px;
     cursor: pointer;
-    color: #040303;
-    background-color: white;
+    color: white;
+    background-color: #0f2c6a;
     font-weight: 700;
     border: 1px solid;
     width: auto;
 }
 
 #index section a:hover {
-    background-color: #040303;
-    color: white;
+    background-color: white;
+    color: #040303;
     border: 1px solid;
 }
 
@@ -407,19 +445,24 @@ nav a:hover:after,nav a.active:after {
 
 
 #werkervaring header h1{
-    color: #0F2C6A;
+    color: #877226;
 }
 
+#werkervaring h2{
+    color: #877226;
+}
+
+
 #werkervaring .hamburger .line,#werkervaring .hamburger .line:before,#werkervaring .hamburger .line:after{
-    background-color: #0F2C6A;
+    background-color: #877226;
 }
 
 #werkervaring nav a:hover:after,#werkervaring nav a.active:after{
-    background-color: #0F2C6A;
+    background-color: #877226;
 }
 
 #werkervaring nav a.active,#werkervaring nav a:hover{
-    color: #0F2C6A;
+    color: #877226;
 }
 
 
@@ -458,18 +501,15 @@ nav a:hover:after,nav a.active:after {
 
 
 #contact header {
-    display: flex;
     flex-direction: row;
     gap: 40px;
-    justify-content: space-between;
     place-items: center;
-    padding: 100px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 #contact .phone{
-    width: fit-content;
-    height: fit-content;
-    max-width: 100%;
+    max-width: 400px;
 }
 
 #contact .content{
@@ -483,11 +523,11 @@ nav a:hover:after,nav a.active:after {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: fit-content;
+    width: calc(100% - 40px);
     border-radius: 20px;
     margin-left: 40px;
     position: relative;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 }
 
 .work_block:before{
@@ -499,17 +539,17 @@ nav a:hover:after,nav a.active:after {
     position: absolute;
     left: -40px;
     top: 40px;
-    /* transform: translate(0%, -50%); */
 }
 
 .work_block:after {
     content: "";
     width: 2px;
     height: 100%;
-    border-left: 2px dashed #040303;
+    border-left: 2px solid #877226;
     position: absolute;
     left: -36px;
     top: 40px;
+    z-index: -1;
 }
 
 
@@ -517,6 +557,9 @@ nav a:hover:after,nav a.active:after {
     display: none;
 }
 
+.timeline-block > p {
+    margin-bottom: 40px;
+}
 
 .work_block *{
     margin: 0px;
@@ -581,7 +624,7 @@ nav a:hover:after,nav a.active:after {
     }
 
     menu{
-        padding: 15px 20px;
+        padding: 30px 15px;
         height: auto;
         flex-direction: column;
     }
@@ -594,15 +637,21 @@ nav a:hover:after,nav a.active:after {
         font-size: 30px;
     }
 
+    h2{
+        font-size: 25px;
+    }
+
     #contact header{
         flex-direction: column;
         place-items: baseline;
+        grid-template-columns: 1fr;
     }
+
+    
 
 
     .work_block{
         flex-direction: column;
-        width: 100%;
         box-sizing: border-box;
     }
 
@@ -613,6 +662,10 @@ nav a:hover:after,nav a.active:after {
 
     .foto-block .images {
         grid-template-columns: 1fr 1fr;
+    }
+
+    body{
+        margin-top: 80px;
     }
 
 }
