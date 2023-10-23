@@ -50,16 +50,6 @@ body * {
     width: 100%;
 }
 
-#loading {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: lightgray;
-    z-index: 9999;
-    transition: width 0.5s;
-}
 
 header {
     padding: 100px 0px;
@@ -98,9 +88,10 @@ h2 {
     margin-bottom: 160px;
 }
 
-#index img {
+#index section > img {
     width: 100%;
     border-radius: 5px;
+    box-shadow: 0px 3px 7px black;
 }
 
 #index video{
@@ -376,6 +367,7 @@ menu.active .hamburger .line:after{
 menu.active{
     background-color: white;
     box-shadow: 0px 0px 8px;
+    z-index: 1;
 }
 
 
