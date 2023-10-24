@@ -447,6 +447,7 @@ nav a:hover:after,nav a.active:after {
 
 #werkervaring h2{
     color: #877226;
+    margin-bottom: 0px;
 }
 
 
@@ -543,7 +544,7 @@ header .content{
     content: "";
     width: 2px;
     height: 100%;
-    border-left: 2px solid #877226;
+    border-left: 2px solid black;
     position: absolute;
     left: -36px;
     top: 40px;
