@@ -12,6 +12,7 @@
   border: 3px solid transparent;
     background-clip: content-box;
     background-color: black;
+    height: 100px;
 }
 
 
@@ -56,13 +57,6 @@ body * {
     width: 100%;
 }
 
-
-header {
-    padding: 100px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 header p{
     max-width: 500px;
@@ -386,11 +380,11 @@ menu.active .hamburger .line:after{
     width: 80%;
 }
 
-  .active nav{
+.active nav{
     left: 0;
-  }
+}
   
-  menu {
+menu {
     position: fixed;
     top: 0;
     display: flex;
@@ -400,6 +394,9 @@ menu.active .hamburger .line:after{
     left: 0;
     margin: 0px;
     padding: 20px;
+    max-width: 1500px;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 menu.active{
@@ -500,19 +497,20 @@ nav a:hover:after,nav a.active:after {
 }
 
 
-#contact header {
-    flex-direction: row;
-    gap: 40px;
+header {
     place-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 20px;
+    padding: 80px 0px;
 }
 
-#contact .phone{
+header img{
     max-width: 400px;
 }
 
-#contact .content{
+header .content{
     display: flex;
     flex-direction: column;
 }
@@ -641,10 +639,11 @@ nav a:hover:after,nav a.active:after {
         font-size: 25px;
     }
 
-    #contact header{
-        flex-direction: column;
+    header{
         place-items: baseline;
         grid-template-columns: 1fr;
+        align-content: center;
+        padding: 0px 0px 80px 0px;
     }
 
     
@@ -666,6 +665,7 @@ nav a:hover:after,nav a.active:after {
 
     body{
         margin-top: 80px;
+        padding: 0px 20px;
     }
 
 }
@@ -695,7 +695,11 @@ nav a:hover:after,nav a.active:after {
     }
 
     header{
-        padding: 40px 0px;
+        padding: 0px 0px 80px 0px;
+    }
+
+    #index section{
+        gap: 20px;
     }
 }
 
