@@ -43,7 +43,7 @@ html{
 body {
     padding: 0px 60px;
     margin: 0px auto;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     max-width: 1500px;
     position: relative;
     overflow-y: scroll;
@@ -129,6 +129,7 @@ h2 {
 width: auto;
 border: 1px solid;
 padding: 5px 8px;
+font-weight: 700;
 }
 
 
@@ -162,8 +163,7 @@ padding: 5px 8px;
 }
 
 #index section a:hover {
-    background-color: white;
-    color: #040303;
+    background-color: black;
     border: 1px solid;
 }
 
@@ -696,6 +696,10 @@ header .content{
 
     header{
         padding: 0px 0px 80px 0px;
+    }
+
+    #tim header{
+        padding-bottom: 10px;
     }
 
     #index section{
