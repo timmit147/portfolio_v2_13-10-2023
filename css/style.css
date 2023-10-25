@@ -159,94 +159,99 @@ font-weight: 700;
     width: auto;
 }
 
+
 #index section a:hover {
-    background-color: #0F2C6A;
-    border: 1px solid;
+    background-color: black;
     color: white;
 }
 
-#index .de-rode-winkel a:hover{
+#index .de-rode-winkel a{
     background-color: #BA481B;
 }
 
-#index .moduloo a:hover{
+#index .moduloo a{
     background-color: #A99A80;
     color: black;
 }
 
-#index .moduloo a:hover{
+#index .moduloo a{
     background-color: #A99A80;
     color: black;
 }
 
-#index .smolke a:hover{
+#index .smolke a{
     background-color: #EE7100;
     color: black;
 }
 
-#index .social-bubble a:hover{
+#index .social-bubble a{
     background-color: #A95AA2;
     color: black;
 }
 
-#index .echt-texel-product a:hover{
+#index .echt-texel-product a{
     background-color: #27A655;
     color: black;
 }
 
-#index .social-elephant a:hover{
+#index .social-elephant a{
     background-color: #EE6559;
     color: black;
 }
 
-#index .straatapp a:hover{
+#index .straatapp a{
     background-color: #295ED0;
 }
 
-#index .oogvereniging a:hover{
+#index .oogvereniging a{
     background-color: #00008B;
 }
 
-#index .multii a:hover{
+#index .todo-app a{
+    background-color: darkmagenta;
+}
+
+#index .multii a{
     background-color: #F8CD09;
     color: black;
 }
 
-#index .edsn a:hover{
+#index .edsn a{
     background-color: #EF7D00;
+    color: black;
 }
 
-#index .hse a:hover{
+#index .hse a{
     background-color: #4CAE95;
     color: black;
 }
 
-#index .snb a:hover{
+#index .snb a{
     background-color: #179BA3;
     color: black;
 }
 
-#index .flappy a:hover{
+#index .flappy a{
     background-color: #FDFB09;
     color: black;
 }
 
-#index .hace a:hover{
+#index .hace a{
     background-color: #FF8E15;
     color: black;
 }
 
-#index .exposuply a:hover{
+#index .exposuply a{
     background-color: #C39469;
     color: black;
 }
 
-#index .super-minor-bros a:hover{
+#index .super-minor-bros a{
     background-color: #7DE445;
     color: black;
 }
 
-#index .nfn a:hover{
+#index .nfn a{
     background-color: #4EAF45;
     color: black;
 }
