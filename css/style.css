@@ -17,7 +17,7 @@
 
 
 #index::-webkit-scrollbar-thumb{
-    background-color: #0F2C6A;
+    background-color: black;
 }
 
 #werkervaring::-webkit-scrollbar-thumb{
@@ -44,7 +44,7 @@ body {
     padding: 0px 60px;
     margin: 0px auto;
     font-family: 'Open Sans', sans-serif;
-    max-width: 1500px;
+    max-width: 1200px;
     position: relative;
     overflow-y: scroll;
     margin-top: 60px;
@@ -82,33 +82,33 @@ h2 {
 /* Homepage css */
 
 #index h1{
-    color: #0F2C6A;
+    color: black;
 }
 
 #index .hamburger .line,#index .hamburger .line:before,#index .hamburger .line:after{
-    background-color: #0F2C6A;
+    background-color: black;
 }
 
 #index nav a:hover:after,#index nav a.active:after{
-    background-color: #0F2C6A;
+    background-color: black;
 }
 
 #index nav a.active,#index nav a:hover{
-    color: #0F2C6A;
+    color: black;
 }
 
 #index section {
     display: grid;
-    gap: 10%;
-    grid-template-columns: 50% 40%;
+    gap: 36px;
+    grid-template-columns: 1fr 1fr;
     margin-bottom: 160px;
     align-items: center;
 }
 
 #index section > img {
     width: 100%;
-    border-radius: 5px;
-    box-shadow: 0px 2px 3px black;
+    max-width: 500px;
+    border: 1px solid;
 }
 
 #index video{
@@ -122,6 +122,7 @@ h2 {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+    max-width: 500px;
 }
 
 
@@ -148,7 +149,7 @@ font-weight: 700;
 #index section .content h2{
     margin-bottom: 0px;
     margin-top: 0px;
-    color: #0f2c6a;
+    color: black;
 }
 
 #index section a {
@@ -156,15 +157,16 @@ font-weight: 700;
     padding: 6px 10px;
     cursor: pointer;
     color: white;
-    background-color: #0f2c6a;
+    background-color: black;
     font-weight: 700;
     border: 1px solid;
     width: auto;
 }
 
 #index section a:hover {
-    background-color: black;
+    background-color: #0F2C6A;
     border: 1px solid;
+    color: white;
 }
 
 /* websites */
@@ -394,7 +396,7 @@ menu {
     left: 0;
     margin: 0px;
     padding: 20px;
-    max-width: 1500px;
+    max-width: 1200px;
     left: 50%;
     transform: translate(-50%, 0%);
 }
@@ -503,7 +505,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     padding: 80px 0px;
 }
 
