@@ -2,8 +2,6 @@
     width: 16px;
 }
 
-
-
 ::-webkit-scrollbar-track {
     margin: 10px;
 
@@ -23,7 +21,7 @@
 }
 
 #werkervaring::-webkit-scrollbar-thumb{
-    background-color: #877226;
+    background-color: #0F2C6A;
 }
 
 #tim::-webkit-scrollbar-thumb{
@@ -167,6 +165,93 @@ font-weight: 700;
     color: white;
 }
 
+#index .de-rode-winkel a:hover{
+    background-color: #BA481B;
+}
+
+#index .moduloo a:hover{
+    background-color: #A99A80;
+    color: black;
+}
+
+#index .moduloo a:hover{
+    background-color: #A99A80;
+    color: black;
+}
+
+#index .smolke a:hover{
+    background-color: #EE7100;
+    color: black;
+}
+
+#index .social-bubble a:hover{
+    background-color: #A95AA2;
+    color: black;
+}
+
+#index .echt-texel-product a:hover{
+    background-color: #27A655;
+    color: black;
+}
+
+#index .social-elephant a:hover{
+    background-color: #EE6559;
+    color: black;
+}
+
+#index .straatapp a:hover{
+    background-color: #295ED0;
+}
+
+#index .oogvereniging a:hover{
+    background-color: #00008B;
+}
+
+#index .multii a:hover{
+    background-color: #F8CD09;
+    color: black;
+}
+
+#index .edsn a:hover{
+    background-color: #EF7D00;
+}
+
+#index .hse a:hover{
+    background-color: #4CAE95;
+    color: black;
+}
+
+#index .snb a:hover{
+    background-color: #179BA3;
+    color: black;
+}
+
+#index .flappy a:hover{
+    background-color: #FDFB09;
+    color: black;
+}
+
+#index .hace a:hover{
+    background-color: #FF8E15;
+    color: black;
+}
+
+#index .exposuply a:hover{
+    background-color: #C39469;
+    color: black;
+}
+
+#index .super-minor-bros a:hover{
+    background-color: #7DE445;
+    color: black;
+}
+
+#index .nfn a:hover{
+    background-color: #4EAF45;
+    color: black;
+}
+
+
 /* websites */
 
 /* #index .de-rode-winkel img{
@@ -258,6 +343,9 @@ font-weight: 700;
 #index .exposuply img{
     box-shadow: 0px 0px 50px #C39469
 }
+#index .hace a{
+    background-color: #FF8E15;
+}
 
 #index .exposuply a{
     background-color: #C39469;
@@ -266,6 +354,15 @@ font-weight: 700;
 #index .super-minor-bros img{
     box-shadow: 0px 0px 50px #7DE445
 }
+
+#index .hace a{
+    background-color: #FF8E15;
+}
+
+#index .exposuply a{
+    background-color: #C39469;
+}
+
 
 #index .super-minor-bros a{
     background-color: #7DE445;
@@ -279,12 +376,41 @@ font-weight: 700;
     background-color: #FDFB09;
 }
 
+#index .hace a{
+    background-color: #FF8E15;
+}
+
+#index .exposuply a{
+    background-color: #C39469;
+}
+
+
+#index .super-minor-bros a{
+    background-color: #7DE445;
+}
 #index .snb img{
     box-shadow: 0px 0px 50px #179BA3
 }
 
 #index .snb a{
     background-color: #179BA3;
+}
+
+#index .flappy a{
+    background-color: #FDFB09;
+}
+
+#index .hace a{
+    background-color: #FF8E15;
+}
+
+#index .exposuply a{
+    background-color: #C39469;
+}
+
+
+#index .super-minor-bros a{
+    background-color: #7DE445;
 }
 
 #index .hse img{
@@ -294,17 +420,60 @@ font-weight: 700;
 #index .hse a{
     background-color: #4CAE95;
 }
+#index .snb a{
+    background-color: #179BA3;
+}
 
+#index .flappy a{
+    background-color: #FDFB09;
+}
+
+#index .hace a{
+    background-color: #FF8E15;
+}
+
+#index .exposuply a{
+    background-color: #C39469;
+}
+
+
+#index .super-minor-bros a{
+    background-color: #7DE445;
+}
 #index .edsn img{
     box-shadow: 0px 0px 50px #EF7D00
 }
 
-#index .edsn a{
-    background-color: #EF7D00;
-}
+
 
 #index .nfn img{
     box-shadow: 0px 0px 50px #4EAF45
+}
+#index .edsn a{
+    background-color: #EF7D00;
+}
+#index .hse a{
+    background-color: #4CAE95;
+}
+#index .snb a{
+    background-color: #179BA3;
+}
+
+#index .flappy a{
+    background-color: #FDFB09;
+}
+
+#index .hace a{
+    background-color: #FF8E15;
+}
+
+#index .exposuply a{
+    background-color: #C39469;
+}
+
+
+#index .super-minor-bros a{
+    background-color: #7DE445;
 }
 
 #index .nfn a{
@@ -442,7 +611,7 @@ nav a:hover:after,nav a.active:after {
 
 
 #werkervaring header h1{
-    color: #877226;
+    color: #0F2C6A;
     line-height: 1em;
 }
 
@@ -453,15 +622,15 @@ nav a:hover:after,nav a.active:after {
 
 
 #werkervaring .hamburger .line,#werkervaring .hamburger .line:before,#werkervaring .hamburger .line:after{
-    background-color: #877226;
+    background-color: #0F2C6A;
 }
 
 #werkervaring nav a:hover:after,#werkervaring nav a.active:after{
-    background-color: #877226;
+    background-color: #0F2C6A;
 }
 
 #werkervaring nav a.active,#werkervaring nav a:hover{
-    color: #877226;
+    color: #0F2C6A;
 }
 
 
