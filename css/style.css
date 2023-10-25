@@ -165,93 +165,88 @@ font-weight: 700;
     color: white;
 }
 
-#index .de-rode-winkel a{
+#index .de-rode-winkel a:hover{
     background-color: #BA481B;
 }
 
-#index .moduloo a{
+#index .moduloo a:hover{
     background-color: #A99A80;
     color: black;
 }
 
-#index .moduloo a{
-    background-color: #A99A80;
-    color: black;
-}
-
-#index .smolke a{
+#index .smolke a:hover{
     background-color: #EE7100;
     color: black;
 }
 
-#index .social-bubble a{
+#index .social-bubble a:hover{
     background-color: #A95AA2;
     color: black;
 }
 
-#index .echt-texel-product a{
+#index .echt-texel-product a:hover{
     background-color: #27A655;
     color: black;
 }
 
-#index .social-elephant a{
+#index .social-elephant a:hover{
     background-color: #EE6559;
     color: black;
 }
 
-#index .straatapp a{
+#index .straatapp a:hover{
     background-color: #295ED0;
 }
 
-#index .oogvereniging a{
+#index .oogvereniging a:hover{
     background-color: #00008B;
 }
 
-#index .todo-app a{
+#index .todo-app a:hover{
     background-color: darkmagenta;
 }
 
-#index .multii a{
+#index .multii a:hover{
     background-color: #F8CD09;
     color: black;
 }
 
-#index .edsn a{
+#index .edsn a:hover{
     background-color: #EF7D00;
     color: black;
 }
 
-#index .hse a{
+#index .hse a:hover{
     background-color: #4CAE95;
     color: black;
 }
 
-#index .snb a{
+#index .snb a:hover{
     background-color: #179BA3;
     color: black;
 }
 
-#index .flappy a{
+#index .flappy a:hover{
     background-color: #FDFB09;
     color: black;
 }
 
-#index .hace a{
+#index .hace a:hover{
     background-color: #FF8E15;
     color: black;
 }
 
-#index .exposuply a{
+#index .exposuply a:hover{
     background-color: #C39469;
     color: black;
 }
 
-#index .super-minor-bros a{
+#index .super-minor-bros a:hover{
     background-color: #7DE445;
     color: black;
 }
 
-#index .nfn a{
+#index .nfn a:hover{
     background-color: #4EAF45;
     color: black;
 }
